@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace StrategyPattern
 {
@@ -8,10 +8,10 @@ namespace StrategyPattern
     {
         static void Main(string[] args)
         {
-            var dwarf = new Dwarf();
-            var boxer = new Boxer();
-            var zombie = new Zombie();
-            var kangaroo = new Kangaroo();
+            var dwarf = new Dwarf(new Kicker());
+            var boxer = new Boxer(new Puncher());
+            var zombie = new Zombie(new Biter());
+            var kangaroo = new Kangaroo(new Kicker());
 
             var warriors = new List<Warrior> { dwarf, boxer, zombie, kangaroo };
 
@@ -21,12 +21,25 @@ namespace StrategyPattern
                 warrior.ShowYourMove();
                 Console.WriteLine();
             }
+
+            // Cambia el comportamiento de cada guerrero en tiempo de ejecucion;
+            dwarf.ChangeBehaviour(new Biter());
+            boxer.ChangeBehaviour(new Biter());
+
+            Console.WriteLine("Apocalipsis Zombie");
+
+            // Apocalipsis Zombie
+            foreach (var warrior in warriors) {
+                Console.WriteLine($"Aparece un guerrero {warrior.GetType().Name} y ahora...");
+                warrior.ShowYourMove();
+                Console.WriteLine();
+            }
         }
     }
 
     public class Warrior
     {
-        private readonly IFigthingBehaviour _figthingBehaviour;
+        private IFigthingBehaviour _figthingBehaviour;
 
         protected Warrior(IFigthingBehaviour figthingBehaviour)
         {
@@ -37,34 +50,40 @@ namespace StrategyPattern
         {
             _figthingBehaviour.Fight();
         }
+
+        public void ChangeBehaviour(IFigthingBehaviour figthingBehaviour)
+        {
+            _figthingBehaviour = figthingBehaviour;
+        }
     }
 
     public class Dwarf : Warrior
     {
-        protected Dwarf(IFigthingBehaviour figthingBehaviour) : base(figthingBehaviour)
+        public Dwarf(IFigthingBehaviour figthingBehaviour) : base(figthingBehaviour)
         {
-           
         }
     }
 
     public class Boxer : Warrior
     {
-        protected Boxer(IFigthingBehaviour figthingBehaviour) : base(figthingBehaviour)
+        public Boxer(IFigthingBehaviour figthingBehaviour) : base(figthingBehaviour)
         {
         }
     }
 
     public class Zombie : Warrior
     {
-        protected Zombie(IFigthingBehaviour figthingBehaviour) : base(figthingBehaviour)
+        public Zombie(IFigthingBehaviour figthingBehaviour) : base(figthingBehaviour)
         {
         }
     }
 
     public class Kangaroo : Warrior
     {
-        protected Kangaroo(IFigthingBehaviour figthingBehaviour) : base(figthingBehaviour)
+        public Kangaroo(IFigthingBehaviour figthingBehaviour) : base(figthingBehaviour)
         {
         }
     }
+
+
 }
