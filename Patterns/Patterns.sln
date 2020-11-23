@@ -3,17 +3,27 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolimorfismoConClaseAbstracta", "PolimorfismoConClaseAbstracta\PolimorfismoConClaseAbstracta.csproj", "{078811FC-E319-48EF-947E-7D203380E44A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolimorfismoConClaseAbstracta", "PolimorfismoConClaseAbstracta\PolimorfismoConClaseAbstracta.csproj", "{078811FC-E319-48EF-947E-7D203380E44A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Polimorfismo", "Polimorfismo", "{1B7E15F7-2938-4F26-B966-0E3F4269FA5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolimorfismoConVirtual", "PolimorfismoConVirtual\PolimorfismoConVirtual.csproj", "{80C60982-5325-4970-9210-EC171D2C30EC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolimorfismoConVirtual", "PolimorfismoConVirtual\PolimorfismoConVirtual.csproj", "{80C60982-5325-4970-9210-EC171D2C30EC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolimorfismoConInterfaz", "PolimorfismoConInterfaz\PolimorfismoConInterfaz.csproj", "{73D87D73-4453-4053-AC06-06929377F078}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolimorfismoConInterfaz", "PolimorfismoConInterfaz\PolimorfismoConInterfaz.csproj", "{73D87D73-4453-4053-AC06-06929377F078}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy pattern", "Strategy pattern", "{EF40A85A-9140-4351-90BE-AE8715FFC87C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{8B88CF48-AEEF-4874-A610-D15C0F5E0562}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{8B88CF48-AEEF-4874-A610-D15C0F5E0562}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory patterns", "Factory patterns", "{72F1B461-4FCF-47D6-9FD8-AE0A63526DDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple-Factory", "Simple-Factory", "{6960E5F2-E6CC-41AA-86BA-6791EE45BCB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Factory.Method", "Factory.Method", "{0D4904EA-87C0-48F4-8D58-6871EF69BD41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory.Method.Pattern", "..\Factory.Method.Pattern\Factory.Method.Pattern.csproj", "{A819CD22-319F-4E93-BE2F-B4A0777BFD9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple.Factory.Pattern", "Factory_pattern\Simple.Factory.Pattern\Simple.Factory.Pattern.csproj", "{7BC6EE00-0C68-4C7B-B353-3BF930BBEA18}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,6 +47,14 @@ Global
 		{8B88CF48-AEEF-4874-A610-D15C0F5E0562}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B88CF48-AEEF-4874-A610-D15C0F5E0562}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B88CF48-AEEF-4874-A610-D15C0F5E0562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A819CD22-319F-4E93-BE2F-B4A0777BFD9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A819CD22-319F-4E93-BE2F-B4A0777BFD9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A819CD22-319F-4E93-BE2F-B4A0777BFD9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A819CD22-319F-4E93-BE2F-B4A0777BFD9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC6EE00-0C68-4C7B-B353-3BF930BBEA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC6EE00-0C68-4C7B-B353-3BF930BBEA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC6EE00-0C68-4C7B-B353-3BF930BBEA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC6EE00-0C68-4C7B-B353-3BF930BBEA18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +64,10 @@ Global
 		{80C60982-5325-4970-9210-EC171D2C30EC} = {1B7E15F7-2938-4F26-B966-0E3F4269FA5E}
 		{73D87D73-4453-4053-AC06-06929377F078} = {1B7E15F7-2938-4F26-B966-0E3F4269FA5E}
 		{8B88CF48-AEEF-4874-A610-D15C0F5E0562} = {EF40A85A-9140-4351-90BE-AE8715FFC87C}
+		{6960E5F2-E6CC-41AA-86BA-6791EE45BCB7} = {72F1B461-4FCF-47D6-9FD8-AE0A63526DDB}
+		{0D4904EA-87C0-48F4-8D58-6871EF69BD41} = {72F1B461-4FCF-47D6-9FD8-AE0A63526DDB}
+		{A819CD22-319F-4E93-BE2F-B4A0777BFD9A} = {0D4904EA-87C0-48F4-8D58-6871EF69BD41}
+		{7BC6EE00-0C68-4C7B-B353-3BF930BBEA18} = {6960E5F2-E6CC-41AA-86BA-6791EE45BCB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05525636-94A5-4BF9-B482-F5CDEBB3CE6C}
