@@ -33,7 +33,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Depndeny Injection", "Depnd
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dependecy.Injection", "Dependency.Injection\Dependecy.Injection\Dependecy.Injection.csproj", "{CEE8E2C8-6FBF-425E-91F5-94EE8410329E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{63A0CA73-737E-45A8-92EC-78C1A37A27DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delegates", "Delegates\Delegates.csproj", "{63A0CA73-737E-45A8-92EC-78C1A37A27DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependency.Injection.Core", "Dependency.Injection\Dependency.Injection.Core\Dependency.Injection.Core.csproj", "{9C22C0D3-2BBF-4F08-9061-2A8153880497}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{63A0CA73-737E-45A8-92EC-78C1A37A27DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63A0CA73-737E-45A8-92EC-78C1A37A27DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63A0CA73-737E-45A8-92EC-78C1A37A27DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C22C0D3-2BBF-4F08-9061-2A8153880497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C22C0D3-2BBF-4F08-9061-2A8153880497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C22C0D3-2BBF-4F08-9061-2A8153880497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C22C0D3-2BBF-4F08-9061-2A8153880497}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -93,6 +99,7 @@ Global
 		{092A2B0D-6065-4142-884A-1C00715266D1} = {36E32377-5DC0-4440-9EE4-F89E8C2CECD1}
 		{36E32377-5DC0-4440-9EE4-F89E8C2CECD1} = {72F1B461-4FCF-47D6-9FD8-AE0A63526DDB}
 		{CEE8E2C8-6FBF-425E-91F5-94EE8410329E} = {B024102D-75F7-45A9-9ECF-A4596620560B}
+		{9C22C0D3-2BBF-4F08-9061-2A8153880497} = {B024102D-75F7-45A9-9ECF-A4596620560B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05525636-94A5-4BF9-B482-F5CDEBB3CE6C}
