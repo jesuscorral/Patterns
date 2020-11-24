@@ -25,13 +25,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Factory.Method.Pattern", ".
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple.Factory.Pattern", "Factory_pattern\Simple.Factory.Pattern\Simple.Factory.Pattern.csproj", "{7BC6EE00-0C68-4C7B-B353-3BF930BBEA18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Abstract.Factory.Pattern", "Factory_pattern\Abstract.Factory.Pattern\ConsoleApp1\Abstract.Factory.Pattern.csproj", "{092A2B0D-6065-4142-884A-1C00715266D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Abstract.Factory.Pattern", "Factory_pattern\Abstract.Factory.Pattern\ConsoleApp1\Abstract.Factory.Pattern.csproj", "{092A2B0D-6065-4142-884A-1C00715266D1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Abstract.Factory", "Abstract.Factory", "{36E32377-5DC0-4440-9EE4-F89E8C2CECD1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Depndeny Injection", "Depndeny Injection", "{B024102D-75F7-45A9-9ECF-A4596620560B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dependecy.Injection", "Dependency.Injection\Dependecy.Injection\Dependecy.Injection.csproj", "{CEE8E2C8-6FBF-425E-91F5-94EE8410329E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dependecy.Injection", "Dependency.Injection\Dependecy.Injection\Dependecy.Injection.csproj", "{CEE8E2C8-6FBF-425E-91F5-94EE8410329E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{63A0CA73-737E-45A8-92EC-78C1A37A27DD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{CEE8E2C8-6FBF-425E-91F5-94EE8410329E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CEE8E2C8-6FBF-425E-91F5-94EE8410329E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CEE8E2C8-6FBF-425E-91F5-94EE8410329E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A0CA73-737E-45A8-92EC-78C1A37A27DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A0CA73-737E-45A8-92EC-78C1A37A27DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A0CA73-737E-45A8-92EC-78C1A37A27DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A0CA73-737E-45A8-92EC-78C1A37A27DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
